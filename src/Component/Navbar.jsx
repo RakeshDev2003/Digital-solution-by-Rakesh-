@@ -60,7 +60,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <a className="btn cta-btn" href="#contact" onClick={closeMenu}>
+          <a className="btn cta-btn" href="" onClick={closeMenu}>
             GET A QUOTE
           </a>
         </div>

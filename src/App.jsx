@@ -17,31 +17,41 @@ import FindUs from "./Component/FindUs";
 export default function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <div id="home">
-        <Hero></Hero>
-      </div>
-      <div id="services">
-        <OurService></OurService>
-      </div>
-      <div id="products">
-        <Product></Product>
-      </div>
-      <Business></Business>
-      <FeatureProduct></FeatureProduct>
-      <DigitalSolution></DigitalSolution>
-      <div id="faq">
-        <FAQ></FAQ>
-      </div>
-      <Feedbacks></Feedbacks>
-      <div id="blog">
-        <LatestBlog></LatestBlog>
-      </div>
-      <Contact></Contact>
-      <FindUs></FindUs>
-      <Footer></Footer>
+      <Navbar/>
+      <section id="home">
+        <Hero />
+      </section>
 
-      
+      <section id="services">
+        <OurService />
+      </section>
+
+      <section id="products">
+        <Product />
+      </section>
+
+      <Business />
+      <FeatureProduct />
+      <DigitalSolution />
+
+      <section id="faqs">
+        <FAQ />
+      </section>
+
+      <Feedbacks />
+
+      <section id="blogs">
+        <LatestBlog />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+
+      <FindUs />
+      <Footer />
+
+
     </>
   )
 }

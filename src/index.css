@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+section {
+  scroll-margin-top: 90px; 
+}
 
 .navbar {
   position: sticky;
@@ -301,7 +304,7 @@ html {
 
 .feature-item-left button {
   padding: 12px 20px;
-  background: #38c172;
+  background:rgb(42,167,161);
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -600,6 +603,7 @@ html {
 }
 
 .contact h1 {
+  padding-right: 100px;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 40px;
@@ -652,7 +656,7 @@ html {
   padding: 14px;
   border: none;
   border-radius: 6px;
-  background: linear-gradient(to right, #4facfe, #43e97b);
+  background: rgb(42,167,161);
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -967,6 +971,9 @@ html {
 
   .card {
     padding: 15px;
+  }
+  .contact h1{
+    padding-right: 0%;
   }
 
   .contact-form {
