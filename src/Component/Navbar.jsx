@@ -5,10 +5,23 @@ export default function Navbar() {
 
   const closeMenu = () => setIsOpen(false);
 
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    closeMenu();
+  };
+
   return (
     <nav className="navbar navbar-expand-lg custom-navbar">
       <div className="container-fluid">
-        <a className="navbar-brand logo" href="#home" onClick={closeMenu}>
+        <a
+          href="#home"
+          className="navbar-brand logo"
+          onClick={(e) => handleScroll(e, "home")}
+        >
           <img src="/Images/nav.png" alt="header-logo" />
         </a>
 
@@ -29,38 +42,72 @@ export default function Navbar() {
         >
           <ul className="navbar-nav nav-links mx-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#home" onClick={closeMenu}>
+              <a
+                href="#home"
+                className="nav-link"
+                onClick={(e) => handleScroll(e, "home")}
+              >
                 Home
               </a>
             </li>
+
             <li className="nav-item">
-              <a className="nav-link" href="#services" onClick={closeMenu}>
+              <a
+                href="#services"
+                className="nav-link"
+                onClick={(e) => handleScroll(e, "services")}
+              >
                 Services
               </a>
             </li>
+
             <li className="nav-item">
-              <a className="nav-link" href="#products" onClick={closeMenu}>
+              <a
+                href="#products"
+                className="nav-link"
+                onClick={(e) => handleScroll(e, "products")}
+              >
                 Products
               </a>
             </li>
+
             <li className="nav-item">
-              <a className="nav-link" href="#faqs" onClick={closeMenu}>
+              <a
+                href="#faqs"
+                className="nav-link"
+                onClick={(e) => handleScroll(e, "faqs")}
+              >
                 FAQs
               </a>
             </li>
+
             <li className="nav-item">
-              <a className="nav-link" href="#blogs" onClick={closeMenu}>
+              <a
+                href="#blogs"
+                className="nav-link"
+                onClick={(e) => handleScroll(e, "blogs")}
+              >
                 Blog
               </a>
             </li>
+
             <li className="nav-item">
-              <a className="nav-link" href="#contact" onClick={closeMenu}>
+              <a
+                href="#contact"
+                className="nav-link"
+                onClick={(e) => handleScroll(e, "contact")}
+              >
                 Contact
               </a>
             </li>
           </ul>
 
-          <a className="btn cta-btn" href="" onClick={closeMenu}>
+          
+          <a
+            href="#contact"
+            className="btn cta-btn"
+            onClick={(e) => handleScroll(e, "contact")}
+          >
             GET A QUOTE
           </a>
         </div>

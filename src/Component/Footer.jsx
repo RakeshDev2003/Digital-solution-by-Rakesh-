@@ -17,7 +17,9 @@ export default function Footer() {
         <div className="footer-box">
           <h3>QUICK LINKS</h3>
           <ul>
-            <li>Home</li>
+            <li>
+              <a href="#home">Home</a>
+            </li>
             <li>Services</li>
             <li>About</li>
             <li>Products</li>
