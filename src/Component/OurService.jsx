@@ -15,7 +15,7 @@ export default function OurService() {
                 </div>
                 <div className="service-box">
                     <div className="service-box-img">
-                        <img src="/Images/Digital.png" alt="" />
+                        <img src="/Images/digital.png" alt="" />
                     </div>
                     <h3>DIGITAL MARKETING</h3>
                     <p>Scale your business with data-driven strategies, including SEO and targeted ads designed to maximize your ROI.</p>
@@ -23,7 +23,7 @@ export default function OurService() {
                 </div>
                 <div className="service-box">
                     <div className="service-box-img">
-                        <img src="/Images/Digital.png" alt="" />
+                        <img src="/Images/digital.png" alt="" />
                     </div>
                     <h3>BRANDING</h3>
                     <p>Craft a memorable brand identity with professional logos and compelling stories that build lasting customer trust.</p>
