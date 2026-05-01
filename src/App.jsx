@@ -8,6 +8,11 @@ import FeatureProduct from "./Component/FeaturesProduct";
 import DigitalSolution from "./Component/DigitalSolution";
 import FAQ from "./Component/FAQ";
 import Feedbacks from "./Component/Feedbacks";
+import LatestBlog from "./Component/LatestBlog";
+import Contact from "./Component/Contact";
+import Footer from "./Component/Footer";
+import FindUs from "./Component/FindUs";
+
 
 export default function App() {
   return (
@@ -25,8 +30,18 @@ export default function App() {
       <Business></Business>
       <FeatureProduct></FeatureProduct>
       <DigitalSolution></DigitalSolution>
-      <FAQ></FAQ>
+      <div id="faq">
+        <FAQ></FAQ>
+      </div>
       <Feedbacks></Feedbacks>
+      <div id="blog">
+        <LatestBlog></LatestBlog>
+      </div>
+      <Contact></Contact>
+      <FindUs></FindUs>
+      <Footer></Footer>
+
+      
     </>
   )
 }
